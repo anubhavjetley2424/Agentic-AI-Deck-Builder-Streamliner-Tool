@@ -44,17 +44,25 @@ Designing a residential deck today is painfully slow:
 
 ![Hero Section](./docs/images/hero.png)
 
-### Workshop — 5-Step Design Flow
-> Upload → Position → Structure → Style → Generate. Each step feeds the next. The AI agents handle everything from floor plan vision analysis to Revit parameter generation.
+### Workshop — Floor Plan Upload
+> Upload a floor plan image. Claude Vision AI extracts property dimensions, room layout, and suggests optimal deck placement.
 
-![Workshop Flow](./docs/images/workshop.png)
+![Floor Plan Upload](./docs/images/workshop-floorplan.png)
 
-### Revit Output — Parametric BIM Model
-> The final output is a real Revit model with proper levels, materials, structural columns, railings, stairs, and optional pergola — all built via the Revit MCP Bridge.
+### Workshop — Shape Your Deck
+> Click and drag to draw the deck footprint directly on the property canvas. Vertex editing for custom shapes.
 
-![Revit Output](./docs/images/revit.png)
+![Deck Area](./docs/images/workshop-deckarea.png)
 
-> **Screenshots:** Drop your app screenshots into `docs/images/` as `hero.png`, `workshop.png`, and `revit.png`.
+### Workshop — Deck Structure
+> Configure single or multi-level decks. Add zones (dining, lounge, BBQ), stairs, and property access points.
+
+![Structure](./docs/images/workshop-structure.png)
+
+### Workshop — Styles & Materials
+> Pick column profiles, railings, roof types, and materials per deck level. Each component walks through shape → material → finish → paint → preview.
+
+![Styles & Materials](./docs/images/workshop-styles.png)
 
 ---
 
