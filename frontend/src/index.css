@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    background-color: #000000;
+    color: rgba(255,255,255,0.85);
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    color: rgba(255,255,255,0.95);
+    font-weight: 600;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+  }
+
+  ::selection {
+    background: #DC3545;
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 1px solid #DC3545;
+    outline-offset: 2px;
+  }
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: #000000; }
+  ::-webkit-scrollbar-thumb { background: #222; }
+  ::-webkit-scrollbar-thumb:hover { background: #DC3545; }
+
+  .zone-canvas {
+    background-color: #0a0a0a;
+    background-image:
+      repeating-linear-gradient(90deg, transparent 0, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px),
+      repeating-linear-gradient(0deg, transparent 0, transparent 60px, rgba(255,255,255,0.03) 60px, rgba(255,255,255,0.03) 61px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .glass {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+}
+
+@layer utilities {
+  .will-change-transform { will-change: transform; }
+}
