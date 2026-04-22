@@ -37,7 +37,11 @@ Designing a residential deck today is painfully slow:
 
 ## Demo
 
-<!-- Replace with actual screenshots/recordings from your running app -->
+### Full Landing Page Scroll
+
+<p align="center">
+  <img src="./docs/images/landing-scroll.gif" alt="DeckForge Landing Page Scroll" width="720" />
+</p>
 
 ### Landing Page — Interactive 3D Blender Model
 > The hero features a real-time Three.js scene rendering a Blender-exported deck wireframe (`.glb`). Edges animate in phased groups — structure in white, stairs and fire pit in red — then hand off to OrbitControls for user interaction.
