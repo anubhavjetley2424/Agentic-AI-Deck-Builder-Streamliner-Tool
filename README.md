@@ -42,19 +42,19 @@ Designing a residential deck today is painfully slow:
 ### Landing Page — Interactive 3D Blender Model
 > The hero features a real-time Three.js scene rendering a Blender-exported deck wireframe (`.glb`). Edges animate in phased groups — structure in white, stairs and fire pit in red — then hand off to OrbitControls for user interaction.
 
-![Hero Section](https://via.placeholder.com/900x500/111111/DC3545?text=Landing+Page+%E2%80%94+3D+Blender+Deck+Model)
+![Hero Section](./docs/images/hero.png)
 
 ### Workshop — 5-Step Design Flow
 > Upload → Position → Structure → Style → Generate. Each step feeds the next. The AI agents handle everything from floor plan vision analysis to Revit parameter generation.
 
-![Workshop Flow](https://via.placeholder.com/900x500/111111/DC3545?text=Workshop+%E2%80%94+5+Step+Design+Flow)
+![Workshop Flow](./docs/images/workshop.png)
 
 ### Revit Output — Parametric BIM Model
 > The final output is a real Revit model with proper levels, materials, structural columns, railings, stairs, and optional pergola — all built via the Revit MCP Bridge.
 
-![Revit Output](https://via.placeholder.com/900x500/111111/DC3545?text=Revit+%E2%80%94+Generated+Deck+Model)
+![Revit Output](./docs/images/revit.png)
 
-> **Tip:** Replace the placeholder images above with actual screenshots from your app. Drop them in a `/docs/images/` folder and reference them as `./docs/images/hero.png`.
+> **Screenshots:** Drop your app screenshots into `docs/images/` as `hero.png`, `workshop.png`, and `revit.png`.
 
 ---
 
